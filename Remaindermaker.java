@@ -1,15 +1,21 @@
-public class oprators {
+import java.util.Scanner;
+
+public class Remaindermaker {
     public static void main(String[] args) {
-        int num1 = 378, num2 = 2;
+        Scanner scanner = new Scanner(System.in);
 
-        int modulus = num1 % num2;
+        System.out.println("====Remainder Maker====");
 
-        printRemainder(modulus); // instead of System.out.println
+        System.out.print("Enter first Number:");
+        int firstnum = scanner.nextInt();
+
+        System.out.print("Enter Second Number:");
+        int Secondnum = scanner.nextInt();
+
+        int sum = firstnum % Secondnum;
+        System.out.println( "Remainder:" + sum);
+       
+        scanner.close();
     }
-
-    // Custom print method
-    public static void printRemainder(int value) {
-        System.out.println("Remainder: " + value);
-    }
+    
 }
-
